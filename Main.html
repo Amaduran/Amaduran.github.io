@@ -1,0 +1,152 @@
+<html>
+<link rel="stylesheet" type="text/css" href="CSS/stylesheet_1.css"/>
+<script language="JavaScript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="Javascript/table_function.js"></script>
+<body>
+<style>
+.button {
+  cursor: pointer;
+  float: right;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  float: right;
+}
+.line{
+	border-left: 1px solid rgb(204, 204, 204);
+    outline: none;
+    padding: 10px;
+    vertical-align: middle;
+	display:inline;
+	margin-left:15px;
+	margin-right:0;
+}
+p{
+	color:white;
+	text-align:left;
+	display:inline;
+	vertical-align:baseline;
+}
+
+</style>
+<div id="first" class="loginField">
+<header>
+
+<table cellspacing="0" border="0" style="background-color: #b20b36;">
+<tr>
+<td style="border:none">
+<img src="assets/images/school.png" class="left" style="vertical-align:text-bottom";><div class="line"></div><p>Powered by Unirej</p>
+</td>
+<td style="border:none">
+<div class="top">Niomi Marshall   ▽
+<br><br><br>
+61/121 Credits</div>
+</td>
+
+</tr>
+</table>
+
+</header>
+<table>
+	<thead>
+		<tr>
+			<th colspan="5"><b>SCHOOL OF ARTS AND SCIENCES</b></th>
+		</tr>
+		<tr>
+			<th colspan="5" bgcolor="#242C67" align="center"> <p style="color:white">Registration Schedule Fall 2019</p></th>
+		</tr>
+		<tr><th colspan="5" align="center"> Information Technology Available Courses</th>
+		</tr>
+		<tr align = "left"><td colspan="5" > Show Completed Courses <input type="checkbox" name="course" value="show"></td>
+		</tr>
+	</thead>
+	<tbody>
+		<tbody class="labels">
+			<tr>
+				<td colspan="5">
+					Department Core <label for="department core" id="dc" onclick="myFunction()">[-]</label>
+					<input type="checkbox" name="department core" id="department core" data-toggle="toggle">
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color:#8c8582">Number</td>
+				<td style="background-color:#8c8582">Course Name</td>
+				<td style="background-color:#8c8582">Prerequisite</td>
+				<td style="background-color:#8c8582">Credits</td>
+				<td style="background-color:#8c8582">Students Registered</td>
+			</tr>
+		</tbody>
+		<tbody class="hide">
+			<tr>
+				<td>COMP 302 </td>
+				<td>Computer Ethics</td>
+				<td>COMP 202 & COMP 205</td>
+				<td>3</td>
+				<td>13/25 <button class="checkbox">apply</button></td>
+			</tr>
+			<tr>
+				<td>COMP 402</td>
+				<td>System Design and Implementation</td>
+				<td>COMP 407</td>
+				<td>3</td>
+				<td>19/20  [!] <button class="button">apply</button></td>
+			</tr>
+			<tr>
+				<td>COMP 312</td>
+				<td>IT Entrepreneurship</td>
+				<td>Junior Standing</td>
+				<td>3</td>
+				<td>8/16 <button class="button">apply</button></td>
+			</tr>
+		</tbody>
+		<tbody class="labels">
+			<tr>
+				<td colspan="5">
+					Major Core <label for="major core" id="mc" onclick="myFunction2()">[-]</label>
+					<input type="checkbox" name="major core" id="major core" data-toggle="toggle">
+				</td>
+			</tr>
+		</tbody>
+		<tbody class="hide">
+			<tr>
+				<td>COMP 405</td>
+				<td>Information Technology Project</td>
+				<td>COMP 402</td>
+				<td>6</td>
+				<td>16/24 <button class="button">apply</button></td>
+			</tr>
+			<tr>
+				<td>COMP 406</td>
+				<td>Information Systems Security</td>
+				<td>Senior Standing</td>
+				<td>3</td>
+				<td>16/16 <button class="disabled">apply</button></td>
+			</tr>
+
+			<tbody class="labels">
+			<tr>
+			<td colspan="5">
+					General Education Courses <label for="gen ed" id="ge" onclick="myFunction3()">[-]</label>
+					<input type="checkbox" name="gen ed" id="gen ed" data-toggle="toggle">
+				</td> </tr>
+				</tbody>
+			<tbody class="labels">
+			<tr>
+				<td colspan="5">
+					Electives <label for="electives" id="el" onclick="myFunction4()">[-]</label>
+					<input type="checkbox" name="electives" id="electives" data-toggle="toggle">
+				</td>
+				</tr>
+				</tbody>
+			<tbody class="labels">
+			<tr>
+				<td colspan="5">
+					Extra Electives <label for="extra electives" id="exel" onclick="myFunction5()">[-]</label>
+					<input type="checkbox" name="extra electives" id="extra electives" data-toggle="toggle">
+				</td>
+				</tr>
+				</tbody>
+		</tbody>		
+	</tbody>
+</table>

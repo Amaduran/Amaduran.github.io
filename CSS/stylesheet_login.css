@@ -1,0 +1,46 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%;*/
+  }
+  #first {
+      width: 600px;
+      height: 700px;
+      background: none;
+      overflow: hidden;
+  }
+  
+  #second{
+      position: relative;
+      width: 50%;
+      height: 25%;
+      margin: auto;
+      margin-top: 5%;
+      background: none;
+      text-align: left;
+  }
+  input.search {
+      width: 5em;  height: 3em;
+      font-size: 15px;
+      cursor: pointer;
+  }
+  input.fadetext{
+      padding: 12px;
+      box-sizing: border-box;
+      width: 20em;
+      border-radius:0px, 0px;
+      margin-bottom: 10px;
+  }
+  input.fadetext:focus{
+      background-color: whitesmoke;
+  }
+      
+  .loginField {
+      border: 0;
+      border: 1px solid #AAAAAA;
+          border-radius: 10px 10px 10px 10px;
+              box-shadow: 0 0 15px #AAAAAA;
+          margin: 60px auto 0;
+  
+  }
